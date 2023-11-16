@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Przykład Formularza HTML</title>
+</head>
+<body>
+    <h1>Formularz HTML z różnymi typami pól dialogowych</h1>
+    <form action="submit.php" method="post">
+        <label for="username">Imię:</label>
+        <input type="text" id="username" name="username" placeholder="Twoje imię" required><br><br>
+
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" placeholder="Hasło" required><br><br>
+
+        <label>Akceptuję regulamin:</label>
+        <input type="checkbox" name="agree" value="yes"><br><br>
+
+        <label>Płeć:</label><br>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Mężczyzna</label><br>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Kobieta</label><br><br>
+
+        <label for="country">Kraj zamieszkania:</label>
+        <select id="country" name="country">
+            <option value="usa">Stany Zjednoczone</option>
+            <option value="canada">Kanada</option>
+            <option value="uk">Wielka Brytania</option>
+        </select><br><br>
+
+        <label for="comment">Komentarz:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Napisz swój komentarz..."></textarea><br><br>
+
+        <label for="profile-picture">Załącz zdjęcie profilowe:</label>
+        <input type="file" id="profile-picture" name="profile-picture"><br><br>
+
+        <label for="birthdate">Data urodzenia:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="meeting-time">Godzina spotkania:</label>
+        <input type="time" id="meeting-time" name="meeting-time"><br><br>
+
+        <label for="quantity">Ilość produktów:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+        <label for="email">Adres e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Twój adres e-mail"><br><br>
+
+        <label for="website">Adres strony internetowej:</label>
+        <input type="url" id="website" name="website" placeholder="Adres strony internetowej"><br><br>
+
+        <label for="search">Wyszukaj produkt:</label>
+        <input type="search" id="search" name="search" placeholder="Szukaj produktu..."><br><br>
+
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu"><br><br>
+
+        <label for="background-color">Wybierz kolor tła:</label>
+        <input type="color" id="background-color" name="background-color"><br><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
